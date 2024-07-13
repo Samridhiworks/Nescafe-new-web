@@ -58,16 +58,7 @@
     </ul>
   </div>
 
-  <script>
-  $(".toggle").click(function(){
-  $("ul").show();
-  
-});
 
-$(".list-mb .fa-x").click(() => {
-        $("ul").hide(); 
-    });
-  </script>
 
     <div class="banner">
         <!-- Swiper -->
@@ -439,33 +430,6 @@ $(".list-mb .fa-x").click(() => {
     
 
 
-    <script>
-        let gallery = document.getElementById("gallery")
-
-        function scrollleft() {
-            gallery.scrollLeft -= 400
-
-        }
-
-        function scrollright() {
-            gallery.scrollLeft += 400
-        }
-    </script>
-
-    <script>
-        let backdrop = document.getElementById("backdrop");
-
-        function showpopup() {
-            let backdrop = document.getElementById("backdrop");
-            backdrop.style.display = "block";
-        }
-
-
-        function hidepopup() {
-            backdrop.style.display = "none";
-        }
-    </script>
-
     <!-- section 4 starts here -->
 
     <section class="sec-4" id="shop">
@@ -493,18 +457,7 @@ $(".list-mb .fa-x").click(() => {
         </div>
     </div>
 
-    <script>
-        let display2 = document.getElementById("backdrop-2")
-
-        function showpopup2(event) {
-            display2.classList.add("display-2")
-            // event.preventDefault();
-        }
-
-        function hidepopup2() {
-            display2.classList.remove("display-2")
-        }
-    </script>
+  
 
     <div class="blog-heading" id="blog">
         <h1>Welcome to the Coffee Blog</h1>
@@ -573,14 +526,8 @@ $(".list-mb .fa-x").click(() => {
 
   
 
-    <!-- change bg on scroll -->
-   <script>
-   $(document).ready(()=>{
-    $(window).scroll(()=>{
-        $('header').addClass('scrolled')
-    })
-   })
-   </script>
+   
+    <script src="script.js"></script>
 </body>
 
 </html>
