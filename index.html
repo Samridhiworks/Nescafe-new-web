@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nescafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="all-content">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/nescafe-logo.png" alt="nes-logo" style="width: 150px; height: 100px;">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about" target="_self">About</a></li>
+                        <li><a href="#coffee" target="_self">Coffees</a></li>
+                        <li><a href="#shop" target="_self">Shop</a></li>
+                        <li><a href="#blog" target="_self">Blog</a></li>
+                        <li><a href="#contact" target="_self">Contact</a></li>
+                        <li><a href="form.html" >Login</a></li>
+                    </ul>
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-bars toggle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+   <!-- mobile banner starts here -->
+   <div class="list-mb">
+    <ul>
+        <i class="fa-solid fa-x" class="close-mb" style="color: #ffff; cursor: pointer;"></i>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Coffees</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="form.html">Login</a></li>
+
+    </ul>
+  </div>
+
+  <script>
+  $(".toggle").click(function(){
+  $("ul").show();
+  
+});
+
+$(".list-mb .fa-x").click(() => {
+        $("ul").hide(); 
+    });
+  </script>
+
+    <div class="banner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" style="height: 565px;">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 >It all starts with a NESCAFÉ®</h1>
+                        <p >There are times when we need that little extra
+                            push, and the bold taste of our finely roasted coffee beans gives you precisely that. Then
+                            the day is yours to seize.</p>
+                        <button style="background: #F01C1C;
+                margin-top: 20px;
+                padding: 19px;
+                color: #fff;
+                width: 220px;
+                border: none;
+                border-radius: 11px;
+                font-size: 14px; cursor: pointer;" onclick="showpopup()">Explore Our Range of Coffee</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 style="font-size: 50px;">Relax and unwind with NESCAFÉ®</h1>
+                        <p style="font-size: 15px; padding-top: 20px;">After all that is said and done, remember, the
+                            universe is yours to unfold. You belong here, with us. Take a deep breath and indulge in a
+                            warm cup of NESCAFÉ® to enjoy the small pleasures of life.</p>
+                        <button style="background: #F01C1C;
+              margin-top: 20px;
+              padding: 19px;
+              color: #fff;
+              width: 220px;
+              border: none;
+              border-radius: 11px;
+              font-size: 14px;">Explore Our Range of Coffee</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="text">
+                        <h1 style="font-size: 50px;">Relax and unwind with NESCAFÉ®</h1>
+                        <p style="font-size: 15px; padding-top: 20px;">After all that is said and done, remember, the
+                            universe is yours to unfold. You belong here, with us. Take a deep breath and indulge in a
+                            warm cup of NESCAFÉ® to enjoy the small pleasures of life.</p>
+                        <button style="background: green;
+                margin-top: 20px;
+                padding: 19px;
+                color: #fff;
+                width: 220px;
+                border: none;
+                border-radius: 11px;
+                font-size: 14px; cursor: pointer;" onclick="showpopup()">Explore Our Range of Coffee </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <!-- <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>  -->
+
+
+    <!-- popup code starts here -->
+    <div class="popup-1" id="backdrop">
+
+        <button class="close" onclick="hidepopup()">X</button>
+        <div class="all-cards-new">
+
+            <div class="popup-card">
+                <div class="img-new">
+                    <img src="images/img-2.webp" alt="coffee">
+                </div>
+                <h3>NESCAFÉ® Iced Latté Can</h3>
+                <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                <div class="icons" style="display: flex;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="popup-card">
+                <div class="img-new">
+                    <img src="images/img-3.webp" alt="coffee">
+                </div>
+                <h3>NESCAFÉ® Iced Latté Can</h3>
+                <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                <div class="icons" style="display: flex;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="popup-card">
+                <div class="img-new">
+                    <img src="images/img-4.webp" alt="coffee">
+                </div>
+                <h3>NESCAFÉ® Iced Latté Can</h3>
+                <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                <div class="icons" style="display: flex;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="all-cards-new" style="margin-bottom: 30px;">
+                <div class="popup-card">
+                    <div class="img-new">
+                        <img src="images/img-2.webp" alt="coffee">
+                    </div>
+                    <h3>NESCAFÉ® Iced Latté Can</h3>
+                    <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                    <div class="icons" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            
+                <div class="popup-card">
+                    <div class="img-new">
+                        <img src="images/img-3.webp" alt="coffee">
+                    </div>
+                    <h3>NESCAFÉ® Iced Latté Can</h3>
+                    <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                    <div class="icons" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            
+                <div class="popup-card">
+                    <div class="img-new">
+                        <img src="images/img-4.webp" alt="coffee">
+                    </div>
+                    <h3>NESCAFÉ® Iced Latté Can</h3>
+                    <p>Your favorite coffee experience made more stylish with a cool can!</p>
+                    <div class="icons" style="display: flex;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+              </div> -->
+
+    </div>
+
+    <!-- section 2 starts here -->
+    <div class="all-content-2" id="about">
+        <div class="text-img-2">
+            <div class="text-2">
+
+                <h1>ABOUT OUR SHOP</h1>
+                <h2>Coffee distribution '</h2>
+                <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                    making it look like readable English. Many desktop publishing packages and web page editorhas a
+                    more-or-less normal distribution of letters, as oppos</p>
+                    <div class="read-btn">
+                <button onclick="showpopup()">Read More</button>
+            </div>
+            </div>
+
+            <div class="image-2">
+                <img src="images/img-2.webp" alt="coffee" width="100px">
+            </div>
+        </div>
+    </div>
+
+    <!-- section-2 ends here -->
+
+    <!-- section-3 starts here -->
+    <h1  class="coffee-head-1" id="coffee">OUR COFFEE OFFER</h1>
+    <section class="sec-3">
+        <div class="backward" id="back-btn" onclick="scrollleft()">
+            <i class="fas fa-chevron-left" style="color: #000;"></i>
+        </div>
+        <div class="all-cards" id="gallery">
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-1.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-2.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3> Espresso</h3>
+                    <p>Espresso is made by forcing nearly boiling water through finely-ground coffee beans.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-3.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-4.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Black Coffee</h3>
+                    <p>Black coffee is arguably the most common type of coffee drink out there.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-1.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Americano</h3>
+                    <p>The Americano is another popular type of coffee drink, and it's very easy to make!</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-2.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Cappuccino</h3>
+                    <p>Cappuccinos are a classic Italian type of coffee drink made of espresso, steamed milk, and thick
+                        foam in equal parts.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-3.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Flat White</h3>
+                    <p>If you're not familiar with flat whites, they're a type of coffee drink that's made with espresso
+                        and steamed milk.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()"> Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-4.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-1.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-2.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images-3">
+                    <img src="images/coffee-3.png" alt="coffee">
+                </div>
+                <div class=" text-3">
+                    <h3>Mocha</h3>
+                    <p>The mocha is considered a coffee and hot chocolate hybrid.</p>
+                    <div class="btn-1">
+                        <button onclick="showpopup()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="forward" id="forward-btn" onclick="scrollright()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </section>
+
+    
+
+
+    <script>
+        let gallery = document.getElementById("gallery")
+
+        function scrollleft() {
+            gallery.scrollLeft -= 400
+
+        }
+
+        function scrollright() {
+            gallery.scrollLeft += 400
+        }
+    </script>
+
+    <script>
+        let backdrop = document.getElementById("backdrop");
+
+        function showpopup() {
+            let backdrop = document.getElementById("backdrop");
+            backdrop.style.display = "block";
+        }
+
+
+        function hidepopup() {
+            backdrop.style.display = "none";
+        }
+    </script>
+
+    <!-- section 4 starts here -->
+
+    <section class="sec-4" id="shop">
+        <form action="#" class="contact-form">
+            <h1 style="color: #000;">Get in Touch</h1>
+            <input type="text" placeholder="Enter Name" required>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="tel" placeholder="Enter Phone Number" required>
+            <div class="send-btn">
+                <button onclick="showpopup2()" style="width: 200px;">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- popup 2 starts here -->
+    <div class="popup-1" id="backdrop-2">
+        <button class="close-2" onclick="hidepopup2()">X</button>
+        <div class="popup-show">
+            <div class="popup-box">
+                <img src="images/nes.gif.png" width="150px">
+                <h1 style="text-align: center;
+               ">Thanks For Login !</h1>
+                <h3 style="padding-top: 50px; text-align: center; font-size: 25px; ">Our Team Will Contact You Soon</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let display2 = document.getElementById("backdrop-2")
+
+        function showpopup2(event) {
+            display2.classList.add("display-2")
+            // event.preventDefault();
+        }
+
+        function hidepopup2() {
+            display2.classList.remove("display-2")
+        }
+    </script>
+
+    <div class="blog-heading" id="blog">
+        <h1>Welcome to the Coffee Blog</h1>
+    </div>
+    <main>
+        <section class="blog" style="display: flex;">
+            <!-- <h2>Latest Posts</h2> -->
+            <div id="blog-container" class="blog-container">
+
+                <div class="blog-box" style="    margin-top: 50px;
+            border: 2px solid gray;
+            height: 500px;
+            width: 450px;
+            box-shadow: 5px 5px 10px gray;
+            margin-inline: 70px; border-radius: 15px;">
+                    <img src="images/blog-img1.png" width="446px" style="border-radius: 15px;">
+                    <h1 style="color: #3B3B54; text-align: center; padding: 20px 0px;">PREP TECHNIQUES COFFEE</h1>
+                    <p style="padding: 0px 20px; text-align: justify;">distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                        has a more</p>
+
+                </div>
+
+                <div class="blog-box" style="    margin-top: 50px;
+                border: 2px solid gray;
+                height: 500px;
+                width: 450px;
+                box-shadow: 5px 5px 10px gray;
+                margin-inline: 70px; border-radius: 15px;">
+                    <img src="images/blog-img2.png" width="446px" style="border-radius: 15px;">
+                    <h1 style="color: #3B3B54; text-align: center; padding: 20px 0px;">ENJOY BEST COFFEE</h1>
+                    <p style="padding: 0px 20px; text-align: justify;">distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                        has a more</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.837825254051!2d77.19170289999998!3d28.544593900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df65f4fb285%3A0xc996022f8190b12f!2sNescaf%C3%A9%20Coffee%20Store!5e0!3m2!1sen!2sin!4v1720678794001!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <!-- footer starts here -->
+    <footer id="contact">
+        <div class="footer-new">
+            <h1>Stay connected</h1>
+            <p>Follow us on our social media accounts to get even more tasty content.</p>
+            <div class="footer-icon">
+                <img src="images/fb icon.webp">
+                <img src="images/twitter icon.webp">
+                <img src="images/insta icon.webp">
+                <img src="images/yt icon.webp">
+
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <!-- change bg on scroll -->
+   <script>
+   $(document).ready(()=>{
+    $(window).scroll(()=>{
+        $('header').addClass('scrolled')
+    })
+   })
+   </script>
+</body>
+
+</html>
