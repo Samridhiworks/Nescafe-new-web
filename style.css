@@ -1316,7 +1316,7 @@ footer {
   }
 
   .blog-container {
-    display: grid;
+    display: none;
     place-items: center;
   }
 
@@ -1387,4 +1387,6 @@ footer {
     display: grid;
     height: auto;
   }
+  .blog-heading{
+    display : none;
 }
